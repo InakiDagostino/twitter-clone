@@ -1,0 +1,30 @@
+
+
+nav{
+    align-items: flex-end;
+    width: 20vw;
+    min-width: 140px;
+    max-width: 270px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 20vh 0 0 1vw;
+}
+
+main{
+    margin-top: 5vh;
+}
+
+nav ul{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+dialog{
+    margin: auto;
+}

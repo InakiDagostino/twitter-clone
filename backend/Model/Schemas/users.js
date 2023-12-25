@@ -1,0 +1,36 @@
+import { Schema, model, models } from "mongoose";
+
+const userSchema = new Schema({
+    name: {
+        type: String,
+        required: [true, "tiene que tener nombre"],
+        unique: true,
+        trim: true
+    },
+    username: {
+        type: String,
+        required: [true, "tiene que tener nombre de usuario"]
+    },
+    email: {
+        type: String,
+        required: [true, "tiene que tener Email"]
+    },
+    password: {
+        type: String,
+        required: [true, "tiene que tener contraseña"]
+    },
+    bio: {
+        type: String,
+        required: [false, "no tiene que tener biografia"]
+    },
+    joinDate: {
+        type: Date,
+        required: [true, "tiene que tener fecha de registro"]
+    },
+    deletedAccount: {
+        type: Boolean,
+        required: [false, "no se elimina la cuenta por defecto"],
+        default: false
+    }
+})
+export default models.Users || model("Users", userSchema)
