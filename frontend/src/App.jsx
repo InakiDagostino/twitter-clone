@@ -29,7 +29,7 @@ function App() {
           <li className="nav-item"><Link to="/ina" className="nav-link">Profile</Link></li>
         </ul>
       </nav>
-      <button onClick={() => dialog.showModal()}>Post</button>
+      <button className='btn' onClick={() => dialog.showModal()}>Post</button>
       <div>usuario*</div>
     </header>
 
@@ -37,7 +37,7 @@ function App() {
           <p>holanda</p>
           <form method="dialog">
             <textarea name="postText" id="post-text" cols="30" rows="10" placeholder='Your post'></textarea>
-            <button>Post</button>
+            <button className='btn'>Post</button>
           </form>
           <button onClick={() => dialog.close()}>cancel</button>
         </dialog>
