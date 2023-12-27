@@ -62,7 +62,7 @@
     width: 100%;
     background-color: hsl(0, 0%, 95%);
     display: flex;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
 
 .search-input{

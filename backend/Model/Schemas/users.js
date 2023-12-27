@@ -4,12 +4,13 @@ const userSchema = new Schema({
     name: {
         type: String,
         required: [true, "tiene que tener nombre"],
-        unique: true,
         trim: true
     },
     username: {
         type: String,
-        required: [true, "tiene que tener nombre de usuario"]
+        required: [true, "tiene que tener nombre de usuario"],
+        unique: true,
+        trim: true
     },
     email: {
         type: String,

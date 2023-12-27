@@ -1,0 +1,104 @@
+.center-content{
+    min-height: 100vh;
+    height: 100%;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.who-to-follow, .search-input{
+    padding: 0.5rem 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    border-radius: 1rem;
+}
+
+.who-to-follow{
+    flex-direction: column;
+}
+
+.who-to-follow > h2{
+    margin-left: 0.75rem;
+}
+
+#follow-list{
+    width: 100%;
+}
+
+#follow-list > li{
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+    height: 4rem;
+}
+
+#follow-list > li:hover{
+    background-color: hsl(0, 0%, 100%)
+}
+
+.trends{
+    width: 100%;
+}
+
+.trends h2{
+    padding-left: 0.75rem;
+}
+
+#trends-list li{
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+    height: 4rem;
+}
+
+#trends-list li:hover{
+    background-color: hsl(0, 0%, 97%);
+    cursor: pointer;
+}
+
+#trends-list{
+    display: flex;
+    flex-direction: column;
+}
+
+#search-container{
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    background-color: hsl(0, 0%, 100%);
+    position: sticky;
+    top: 0;
+}
+
+.search-input{
+    padding: 0.5rem 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    border-radius: 1rem;
+}
+
+.search-input{
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    gap: 0.25rem;
+    padding: 0.5rem ;
+    height: 90%;
+    align-items: center;
+}
+.search-input > input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    
+}
