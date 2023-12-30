@@ -1,5 +1,12 @@
 import { useEffect } from "react"
 import style from "../css/notifications.module.css"
+import notifications from "../assets/notis"
+import recomends from "../assets/recomends"
+import trends from "../assets/trends"
+import SearchBar from "../Components/SearchBar"
+import Trends from "../Components/TrendsComponents/Trends"
+import FollowRecomendation from "../Components/FollowComponents/FollowRecomendation"
+import NotificationWall from "../Components/NotificationsComponents/NotificationWall"
 
 export function Notifications(){
 
@@ -8,48 +15,14 @@ export function Notifications(){
         <main id="header-home">
             <div className={style["center-content"]}>
                 
-                <div id={style["posts"]}>
-                    <h2>Notifications</h2>
-                    <ul>
-                        <li>noti1</li>
-                        <li>noti1</li>
-                        <li>noti1</li>
-                    </ul>
-                </div>
+                <NotificationWall style={style} notifications={notifications} />
                 
             </div>
             <div className={style["right-content"]}>
-                <div id={style["search-container"]}>
-                    <div className={style["search-input"]}>
-                    <div id={style["search-icon"]}>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                    </div>
-                    <input type="text" placeholder="Search" />
-                </div>
-                </div>
+                <SearchBar style={style} />
                 
-                <div className={style["trends"]}>
-                    <h2>trends</h2>
-                    <ul id={style["trends-list"]}>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                        <li>trend1</li>
-                    </ul>
-                </div>
-                <div className={style["who-to-follow"]}>
-                    <h2>Who to follow</h2>
-                    <ul id={style["follow-list"]}>
-                        <li>follow</li>
-                        <li>follow</li>
-                        <li>follow</li>
-                    </ul>
-                </div>
+                <Trends style={style} trends={trends} />
+                <FollowRecomendation style={style} recomends={recomends} />
             </div>
         </main>
             

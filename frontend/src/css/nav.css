@@ -60,7 +60,7 @@ nav ul{
 .nav-item{
     color: black;
     background-color: hsl(0, 0%, 100%);
-    
+    transition: all 0.2s;
     border-radius: 2rem;
 }
 
@@ -79,4 +79,76 @@ nav ul{
     gap: 0.5rem;
     width: 100%;
     height: 100%;
+}
+
+dialog{
+    width: 75vw;
+    margin-bottom: 50vh;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+}
+
+dialog > button{
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+dialog > button:hover{
+    background-color: hsl(0, 0%, 85%);
+}
+
+dialog > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+dialog > form > textarea{
+    width: 95%;
+    resize: none;
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+}
+
+.post-button{
+    background-color: hsl(212, 100%, 46%);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-left: 0.75rem
+}
+
+.post-button:hover{
+    background-color: hsl(212, 100%, 42%);
+    color: white;
+}
+
+.user-div{
+    display: flex;
+    height: 4rem;
+}
+
+.user-div .data-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4rem;
+}
+
+.user-div .img{
+    height: 100%;
+    margin: 0;
+}
+
+.user-div .img img{
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }

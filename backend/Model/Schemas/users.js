@@ -26,7 +26,8 @@ const userSchema = new Schema({
     },
     joinDate: {
         type: Date,
-        required: [true, "tiene que tener fecha de registro"]
+        default: Date.now
+        
     },
     deletedAccount: {
         type: Boolean,

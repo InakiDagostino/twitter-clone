@@ -49,25 +49,25 @@
     
 }
 
-.dms-list li{
+.dms-list-div li{
     padding: 0.5rem;
     height: 4rem;
     padding-left: 1rem;
 }
 
-.dms-list li:hover{
+.dms-list-div li:hover{
     background-color: hsl(0, 0%, 97%);
     cursor: pointer;
 }
 
-.dms-list{
+.dms-list-div{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     
 }
 
-.dms-list h2{
+.dms-list-div h2{
     padding-left: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -80,3 +80,52 @@
     padding: 1rem;
 }
 
+.dms-list > li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dms-list > li div{
+    width: fit-content;
+    cursor: pointer;
+    height: 100%;
+}
+
+.user-img{
+    width: 100%;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.dms-list > li div img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.chat-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat{
+    width: 100%;
+}
+
+.message-box{
+    background-color: gray;
+    margin: 1rem;
+    padding: 0.75rem;
+    border-radius: 4rem;
+    width: fit-content;
+    color: white;
+}
+
+.your-message{
+    margin-left: auto;
+    background-color: blue;
+}

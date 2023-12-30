@@ -1,49 +1,47 @@
 
-
 .center-content{
     min-height: 100vh;
     height: 100%;
     border: 1px solid black;
     border-top: none;
     border-bottom: none;
-}
-
-.post{
-    padding: 0.5rem;
-}
-
-.post:hover{
-    background-color: hsl(0, 0%, 97%);
-    cursor: pointer;
-}
-
-#posts{
-    display: flex;
-    flex-direction: column;
-}
-
-.interactions > button{
-    cursor: pointer;
-}
-
-#post-form-home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0;
-    gap: 0.25rem;
-    border-top: 1px solid hsla(0, 0%, 0%, 0.5);
-    border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
-}
-#post-form-home > textarea{
-    width: 90%;
-    resize: none;
     padding: 0.75rem;
-    border: none;
-    outline: none;
 }
 
-/*------------------------------*/
+.user{
+    display: flex;
+    height: 4rem;
+}
+
+.user-img{
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.user-img img{
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.post-body{
+    margin: 1rem 0;
+}
+
+
+
+.interactions{
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.interactions button{
+    width: 100%;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------------------------------*/
 
 .right-content{
     display: flex;
